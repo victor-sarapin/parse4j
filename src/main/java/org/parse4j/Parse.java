@@ -60,6 +60,10 @@ public class Parse {
 		return mApplicationId;
 	}
 
+	static public boolean hasRestAPIKey() {
+		return (null != mRestAPIKey);
+	}
+
 	static public String getRestAPIKey() {
 		return mRestAPIKey;
 	}

@@ -73,7 +73,7 @@ public abstract class ParseCommand {
 
 		if (Parse.isIsRootMode()) {
 			requestBase.addHeader(HEADER_MASTER_KEY, Parse.getMasterKey());
-		} else {
+		} else if (Parse.hasRestAPIKey()) {
 			requestBase.addHeader(HEADER_REST_API_KEY, Parse.getRestAPIKey());
 		}
 
